@@ -135,19 +135,20 @@ class App extends Component {
             </div>
           </div>
         </nav>
-        <div className="app-bottom-section-container">
-          <ul className="history-items-container">
-            {!isEmptyList &&
-              searchResults.map(eachHistoryItem => (
+        {!isEmptyList && (
+          <div className="app-bottom-section-container">
+            <ul className="history-items-container">
+              {searchResults.map(eachHistoryItem => (
                 <HistoryItem
                   historyDetails={eachHistoryItem}
                   key={eachHistoryItem.id}
                   deleteHistory={this.deleteHistory}
                 />
               ))}
-            {isEmptyList && <EmptyHistoryView />}
-          </ul>
-        </div>
+            </ul>
+          </div>
+        )}
+        {isEmptyList && <EmptyHistoryView />}
       </div>
     )
   }

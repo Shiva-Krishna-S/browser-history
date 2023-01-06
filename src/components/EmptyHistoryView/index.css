@@ -1,9 +1,27 @@
+.empty-history-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  min-height: 90vh;
+}
+
+@media screen and (min-width: 768px) {
+  .empty-history-container {
+    min-height: 80vh;
+  }
+}
+
 .empty-view-text {
   text-align: center;
   font-size: 'Roboto';
   font-size: 18px;
-  color: #64748b;
+  color: #475569;
   padding: 10px;
+  border: 1px solid #f8fafc;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  width: 70%;
 }
 
 @media screen and (min-width: 768px) {

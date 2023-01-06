@@ -9,6 +9,7 @@
   .history-item {
     padding: 30px;
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -35,7 +36,7 @@
 @media screen and (min-width: 768px) {
   .history-details-container {
     margin-left: auto;
-    width: 85%;
+    width: 82%;
   }
 }
 
