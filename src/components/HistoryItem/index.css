@@ -1,0 +1,120 @@
+.history-item {
+  list-style-type: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .history-item {
+    padding: 30px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.accessed-time {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+  .accessed-time {
+    font-size: 18px;
+    width: 100px;
+  }
+}
+
+.history-details-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .history-details-container {
+    align-items: center;
+    margin-left: auto;
+    width: 85%;
+  }
+}
+
+.website-details-container {
+  display: flex;
+}
+
+.domain-logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+}
+
+.domain-details {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .domain-details {
+    margin-left: 20px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.company-name {
+  font-family: 'Roboto';
+  color: #475569;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* @media screen and (min-width: 768px) {
+  .company-name {
+    font-size: 16px;
+  }
+} */
+
+.company-url {
+  color: #64748b;
+  font-family: 'Roboto';
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .company-url {
+    padding-left: 10px;
+    /* font-size: 14px; */
+  }
+}
+
+.delete-button {
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.delete-image {
+  height: 15px;
+  width: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .delete-button {
+    align-self: center;
+  }
+  .delete-button {
+    margin-left: 20px;
+  }
+  .delete-image {
+    height: 20px;
+    width: 20px;
+  }
+}
