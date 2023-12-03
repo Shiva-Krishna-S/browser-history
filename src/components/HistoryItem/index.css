@@ -51,6 +51,12 @@
   border-radius: 2px;
 }
 
+@media screen and (min-width: 768px) {
+  .domain-logo {
+    align-self: center;
+  }
+}
+
 .domain-details {
   margin-left: 10px;
   display: flex;
@@ -73,11 +79,11 @@
   margin: 0;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .company-name {
     font-size: 16px;
   }
-} */
+}
 
 .company-url {
   color: #64748b;
@@ -88,7 +94,7 @@
 @media screen and (min-width: 768px) {
   .company-url {
     padding-left: 10px;
-    /* font-size: 14px; */
+    font-size: 14px;
   }
 }
 
